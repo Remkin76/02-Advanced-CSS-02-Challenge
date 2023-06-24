@@ -40,13 +40,21 @@ h2 {
   padding:50px;
 }
 
-p, h3 {
+p, h3, h4 {
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   color: var(--medGrey);
 }
 
-
 h3 {
+position: absolute;
+padding:20px;
+z-index:999;
+background-color: #587792;
+color: #292828;
+
+}
+
+h4 {
   text-align: center;
 }
 
@@ -146,6 +154,11 @@ section{
   border: 1px solid var(--darkGrey)
 }
 
+
+.card img {
+  width: 100%;
+}
+
 nav a, .sectionParagraph a {
   font-size: 1.5rem;
   position:relative;
@@ -169,7 +182,7 @@ nav a::after, .sectionParagraph a::after {
 }
 
 /* Style for the underline */
-nav a::before, .sectionParagraph a::before {
+nav a::before {
   content: '';
   position: absolute;
   bottom: 0;
@@ -181,6 +194,18 @@ nav a::before, .sectionParagraph a::before {
   z-index: -1;
 }
 
+.sectionParagraph a::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background-color: var(--cambridgeBlue);
+  transition: height 0.5s ease-in-out;
+  z-index: 1;
+  opacity: 50%;
+}
 
 /* Animation on hover */
 nav a:hover, .sectionParagraph a:hover {
@@ -224,10 +249,7 @@ footer {
     height:50px;
     padding-left:40px;
     }
-
-
 }
-
 
 
 @media screen and (max-width: 768px) {

@@ -64,7 +64,7 @@ color: #292828;
   padding:5px;
   z-index:999;
   background-color: #587792;
-  opacity: 50%;
+  opacity: 80%;
   color: #292828;
   }
 
@@ -167,9 +167,6 @@ section{
   object-fit: cover;
 }
 
-.card img {
-  width: 100%;
-}
 
 a {
   font-size: 1.5rem;

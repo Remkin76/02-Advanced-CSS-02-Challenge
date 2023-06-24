@@ -1,0 +1,215 @@
+/* Remkin76 Colour Scheme */
+:root {
+  --sand: #ba9466;
+  --cambridgeBlue: #8db1ab;
+  --slateGrey: #587792;
+  --darkGrey: #292828;
+  --medGrey:#545353;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+body {
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: flex-start;
+}
+
+
+h1,h2 {  
+  font-size: 2.5rem;
+  padding-left: 80px;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 0;
+}
+
+h1{
+  background-color: var(--sand);
+}
+
+h2 {
+  color: var(--slateGrey);
+  padding:20px;
+}
+
+p, h3 {
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: var(--medGrey);
+}
+
+
+h3 {
+  text-align: center;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: var(--medGrey);
+}
+
+
+header {
+  position: fixed;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  display:flex;
+  width: 100%;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 0px;
+  text-align:left;
+  background: var(--slateGrey);
+  color: var(--darkGrey);
+  align-items:center;
+  justify-content: space-between;
+  z-index: 999;
+}
+
+
+nav {
+  display: flex;
+  background-color: var(--slateGrey);
+  margin-left: auto;
+}
+
+.subHeading{
+  margin-top: 100px;
+  width: 100%;
+  height: fit-content;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+section{
+  width: 100%;
+  height: fit-content;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.sectionHeader{
+  width: 40%;
+  text-align: right;
+  border-right: 5px solid var(--slateGrey);
+}
+
+.sectionParagraph{
+  padding:20px;
+  width:60%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.subHeading img {
+max-width: 100%;
+object-fit: contain;
+display: inline-flex;
+}
+
+.work{
+  padding:20px;
+  width:60%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+img{
+  border:2px solid var(--medGrey);
+  margin:10px;
+}
+
+
+.myWorkMainImage img{
+  display:inline-block;
+  max-height:400px;
+  object-fit:contain;
+  
+}
+
+.myWorkCardImage img{
+  display: inline;
+  max-height:200px;
+  object-fit:contain;
+}
+
+a {
+  font-size: 1.5rem;
+  position:relative;
+  display:inline-flex;
+  text-decoration: none;
+  color: var(--darkGrey);
+  padding: 10px;
+  transition: color 0.5s ease-in-out; 
+  align-items:right;
+  margin: 5px;
+}
+
+a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: var(--cambridgeBlue); /* Set the desired color */
+}
+
+/* Style for the underline */
+a::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background-color: var(--cambridgeBlue);
+  transition: height 0.5s ease-in-out;
+  z-index: -1;
+}
+
+
+/* Animation on hover */
+a:hover {
+  color: var(--sand);
+  z-index: 1;
+}
+
+
+a:hover::before {
+  height: 100%;
+}
+
+
+nav a:hover {
+  background-color: var(--white);
+  color: var(--dark-blue);
+}
+
+
+footer {
+  width: 100%;
+  bottom: 0;
+  padding: 20px;
+  text-align: center;
+  background: var(--dark-blue);
+  color: var(--white);
+  margin-top: auto;
+}
+
+
+@media screen and (max-width: 768px) {
+  main,
+  nav {
+    flex-direction: column;
+  }
+}

@@ -86,6 +86,12 @@ nav {
  
 }
 
+.subHeading img {
+  max-width: 100%;
+  object-fit: contain;
+  display: inline-flex;
+  }
+
 section{
   width: 100%;
   height: fit-content;
@@ -98,47 +104,36 @@ section{
 .sectionHeader{
   width: 40%;
   text-align: right;
-  border-right: 5px solid var(--slateGrey);
+  
 }
 
 .sectionParagraph{
+  border-left: 5px solid var(--slateGrey);
   padding:20px;
   width:60%;
   display: flex;
   flex-wrap: wrap;
 }
 
-.subHeading img {
-max-width: 100%;
-object-fit: contain;
-display: inline-flex;
-}
 
 .work{
   padding:20px;
   width:60%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
 }
 
-img{
-  border:2px solid var(--medGrey);
-  margin:10px;
-}
-
-
 .myWorkMainImage img{
-  display:inline-block;
-  max-height:400px;
+  display:block;
+  max-width:80%;
   object-fit:contain;
-  
 }
 
 .myWorkCardImage img{
-  display: inline;
-  max-height:200px;
+  display: inline-block;
+  max-width:40%;
   object-fit:contain;
 }
 
@@ -208,8 +203,24 @@ footer {
 
 
 @media screen and (max-width: 768px) {
-  main,
+  main,section,
   nav {
     flex-direction: column;
+  }
+
+  .sectionHeader{
+    width: 40%;
+    text-align: left;
+    border-right: none;
+    border-bottom: 5px solid var(--slateGrey);
+  }
+
+  .work, .sectionParagraph {
+    padding:5px;
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
   }
 }

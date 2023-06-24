@@ -8,7 +8,6 @@
 }
 
 main {
-  display: flex;
   flex-wrap: wrap;
 }
 
@@ -23,10 +22,10 @@ body {
 
 h1,h2 {  
   font-size: 2.5rem;
-  padding-left: 80px;
-  padding-top: 10px;
-  padding-right: 10px;
-  padding-bottom: 10px;
+  padding-left: 120px;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
   margin-bottom: 0;
 }
 
@@ -36,7 +35,7 @@ h1{
 
 h2 {
   color: var(--slateGrey);
-  padding:20px;
+  padding:50px;
 }
 
 p, h3 {
@@ -56,6 +55,7 @@ header {
   position: fixed;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
   display:flex;
+  max-height: 100px;
   width: 100%;
   padding-top: 20px;
   padding-right: 20px;
@@ -69,6 +69,11 @@ header {
   z-index: 999;
 }
 
+.avatar{
+  height:100px;
+  position: absolute;
+  padding-left:20px;
+}
 
 nav {
   display: flex;
@@ -81,6 +86,7 @@ nav {
   width: 100%;
   height: fit-content;
   display:flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
  
@@ -110,7 +116,7 @@ section{
 .sectionParagraph{
   border-left: 5px solid var(--slateGrey);
   padding:20px;
-  width:60%;
+  width:80%;
   display: flex;
   flex-wrap: wrap;
 }
@@ -128,12 +134,14 @@ section{
   width: 100%;
   height: auto;
   object-fit: cover;
+  border: 1px solid var(--darkGrey)
 }
 
 .myWorkCardImage{
   width: 100%;
   height: auto;
   object-fit: cover;
+  border: 1px solid var(--darkGrey)
 }
 
 a {
@@ -208,18 +216,23 @@ footer {
   }
 
   .sectionHeader{
-    width: 40%;
+    width: 30%;
     text-align: left;
     border-right: none;
     border-bottom: 5px solid var(--slateGrey);
   }
 
   .work, .sectionParagraph {
+    border-left:none;
     padding:5px;
     width:100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: left;
     align-items: center;
+  }
+
+  h1,h2 {  
+    font-size: 2.5rem;
   }
 }

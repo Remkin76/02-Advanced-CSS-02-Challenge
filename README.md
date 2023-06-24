@@ -44,7 +44,7 @@ Future developments include, but are not limited to:
 
 ## Link to the application
 
-file:///Users/cameron/Bootcamp/02-Advanced-CSS-02-Challenge/index.html
+https://remkin76.github.io/02-Advanced-CSS-02-Challenge/
 
 ## Screenshot of the application
 

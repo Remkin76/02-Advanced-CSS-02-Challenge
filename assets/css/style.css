@@ -40,22 +40,37 @@ h2 {
   padding:50px;
 }
 
-p, h3, h4 {
+p, h3 {
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   color: var(--medGrey);
 }
 
-h3 {
+.myWorkMainImage h3 {
 position: absolute;
-padding:20px;
+margin-top:45%;
+margin-left:0;
+padding:10px;
 z-index:999;
 background-color: #587792;
+opacity: 80%;
 color: #292828;
-
 }
+
+.myWorkCardImage h3 {
+  font-size: 1rem;
+  position: absolute;
+  margin-top:40%;
+  margin-left:0;
+  padding:5px;
+  z-index:999;
+  background-color: #587792;
+  opacity: 50%;
+  color: #292828;
+  }
 
 h4 {
   text-align: center;
+  color: #292828;
 }
 
 
@@ -128,7 +143,7 @@ section{
 }
 
 .sectionParagraph a{
-  color: #587792;
+  color:#545353
 }
 
 .work{
@@ -144,22 +159,19 @@ section{
   width: 100%;
   height: auto;
   object-fit: cover;
-  border: 1px solid var(--darkGrey)
 }
 
 .myWorkCardImage{
   width: 100%;
   height: auto;
   object-fit: cover;
-  border: 1px solid var(--darkGrey)
 }
-
 
 .card img {
   width: 100%;
 }
 
-nav a, .sectionParagraph a {
+a {
   font-size: 1.5rem;
   position:relative;
   display:inline-flex;
@@ -230,9 +242,8 @@ footer {
   bottom: 0;
   padding: 20px;
   text-align: center;
-  background: var(--dark-blue);
-  color: var(--white);
   margin-top: auto;
+  background-color: #8db1ab;
 }
 
 @media screen and (max-width: 992px) {

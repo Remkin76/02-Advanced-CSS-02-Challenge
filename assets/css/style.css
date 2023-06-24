@@ -146,7 +146,7 @@ section{
   border: 1px solid var(--darkGrey)
 }
 
-a {
+nav a, .sectionParagraph a {
   font-size: 1.5rem;
   position:relative;
   display:inline-flex;
@@ -158,7 +158,7 @@ a {
   margin: 5px;
 }
 
-a::after {
+nav a::after, .sectionParagraph a::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -169,7 +169,7 @@ a::after {
 }
 
 /* Style for the underline */
-a::before {
+nav a::before, .sectionParagraph a::before {
   content: '';
   position: absolute;
   bottom: 0;
@@ -183,18 +183,18 @@ a::before {
 
 
 /* Animation on hover */
-a:hover {
+nav a:hover, .sectionParagraph a:hover {
   color: var(--darkGrey);
   z-index: 1;
 }
 
 
-a:hover::before {
+nav a:hover::before, .sectionParagraph a:hover::before {
   height: 100%;
 }
 
 
-nav a:hover {
+nav a:hover , .sectionParagraph a:hover {
   background-color: var(--white);
   color: var(--dark-blue);
 }
@@ -211,7 +211,7 @@ footer {
 }
 
 @media screen and (max-width: 992px) {
-  a {
+  nav a, .sectionParagraph a {
     font-size: 1rem;
   }
 
@@ -236,7 +236,7 @@ footer {
     flex-direction: column;
   }
   
-  a {
+  nav a, .sectionParagraph a  {
     font-size: 0.7rem;
   }
 

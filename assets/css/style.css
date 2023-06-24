@@ -7,20 +7,24 @@
   --medGrey:#545353;
 }
 
+
+/* Sets the main content to flex wrap */
 main {
   flex-wrap: wrap;
 }
 
+
+/* Sets the body content globally */
 body {
   font-size: 16px;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   justify-content: flex-start;
-
 }
 
 
+/* Sets header  */
 h1 {  
   font-size: 2rem;
   padding-left: 120px;
@@ -30,32 +34,43 @@ h1 {
   margin-bottom: 0;
 }
 
+
+
+/* Sets the background of the main header  */
 h1{
   background-color: var(--sand);
 }
 
+
+/* Sets the styling of the header for each section content */
 h2 {
   font-size: 2rem;
   color: var(--slateGrey);
   padding:50px;
 }
 
+
+/* Sets the styling for the paragraph, and the header that sits over each website image */
 p, h3 {
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   color: var(--medGrey);
 }
 
+
+/* Sets the unique styling of the main webiste in the my work section, so that it is twice the width of the website images below */
 .myWorkMainImage h3 {
-position: absolute;
-margin-top:45%;
-margin-left:0;
-padding:10px;
-z-index:999;
-background-color: #587792;
-opacity: 80%;
-color: #292828;
+  position: absolute;
+  margin-top:45%;
+  margin-left:0;
+  padding:10px;
+  z-index:999;
+  background-color: #587792;
+  opacity: 80%;
+  color: #292828;
 }
 
+
+/* Sets the image sizing and styling of the website images */
 .myWorkCardImage h3 {
   font-size: 1rem;
   position: absolute;
@@ -66,14 +81,17 @@ color: #292828;
   background-color: #587792;
   opacity: 80%;
   color: #292828;
-  }
+}
 
+
+/* Sets the styling of the header which is displayed in the footer */
 h4 {
   text-align: center;
   color: #292828;
 }
 
 
+/* Sets the styling of the header of the page */
 header {
   position: sticky;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
@@ -91,18 +109,24 @@ header {
   z-index: 999;
 }
 
+
+/* Sets the styling of the avatar image so that it sits inside the header */
 .avatar{
   height:60px;
   position: absolute;
   padding-left:40px;
 }
 
+
+/* Sets the styling of the navigation links in general */
 nav {
   display: flex;
   background-color: var(--slateGrey);
   margin-left: auto;
 }
 
+
+/* Sets the styling of the back image displayed just under the header */
 .subHeading{
   width: 100%;
   height: fit-content;
@@ -110,15 +134,18 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
- 
 }
 
+
+/* Sets the styling of the beach image to display in the subHeading  */
 .subHeading img {
   max-width: 100%;
   object-fit: contain;
   display: inline-flex;
-  }
+}
 
+
+/* Sets the default section styling */
 section{
   width: 100%;
   height: fit-content;
@@ -128,12 +155,15 @@ section{
   margin:10px;
 }
 
+
+/* Sets the styling for the main content headers */
 .sectionHeader{
   width: 40%;
   text-align: right;
-  
 }
 
+
+/* Sets the styling for each paragraph section which may not be a written paragraph */
 .sectionParagraph{
   border-left: 5px solid var(--slateGrey);
   padding:20px;
@@ -142,10 +172,14 @@ section{
   flex-wrap: wrap;
 }
 
+
+/* Sets the anchor styling where the parent in .sectionParagraph */
 .sectionParagraph a{
   color:#545353
 }
 
+
+/* Sets the work section as a grid to align all website images */
 .work{
   padding:20px;
   display: grid;
@@ -154,6 +188,8 @@ section{
   gap: 10px;
 }
 
+
+/* Sets the main image to take up two columns width */
 .myWorkMainImage{
   grid-column: span 2; /* make the main image take up two columns */
   width: 100%;
@@ -161,6 +197,8 @@ section{
   object-fit: cover;
 }
 
+
+/* Sets the other website image to sit inside the grid */
 .myWorkCardImage{
   width: 100%;
   height: auto;
@@ -168,6 +206,7 @@ section{
 }
 
 
+/* Sets all anchor styling */
 a {
   font-size: 1.5rem;
   position:relative;
@@ -180,6 +219,8 @@ a {
   margin: 5px;
 }
 
+
+/* Sets underline of certain anchors */
 nav a::after, .sectionParagraph a::after {
   content: "";
   position: absolute;
@@ -187,8 +228,9 @@ nav a::after, .sectionParagraph a::after {
   left: 0;
   width: 100%;
   height: 4px;
-  background-color: var(--cambridgeBlue); /* Set the desired color */
+  background-color: var(--cambridgeBlue);
 }
+
 
 /* Style for the underline */
 nav a::before {
@@ -203,6 +245,8 @@ nav a::before {
   z-index: -1;
 }
 
+
+/* Sets underline of certain anchors */
 .sectionParagraph a::before {
   content: '';
   position: absolute;
@@ -216,6 +260,8 @@ nav a::before {
   opacity: 50%;
 }
 
+
+
 /* Animation on hover */
 nav a:hover, .sectionParagraph a:hover {
   color: var(--darkGrey);
@@ -223,17 +269,13 @@ nav a:hover, .sectionParagraph a:hover {
 }
 
 
+/* Animation to lift underline */
 nav a:hover::before, .sectionParagraph a:hover::before {
   height: 100%;
 }
 
 
-nav a:hover , .sectionParagraph a:hover {
-  background-color: var(--white);
-  color: var(--dark-blue);
-}
-
-
+/* Sets the basic styling of the footer */
 footer {
   width: 100%;
   bottom: 0;
@@ -243,6 +285,8 @@ footer {
   background-color: #8db1ab;
 }
 
+
+/* Sets the media query where the screen width is below 992px */
 @media screen and (max-width: 992px) {
   nav a, .sectionParagraph a {
     font-size: 1rem;
@@ -256,10 +300,11 @@ footer {
   .avatar{
     height:50px;
     padding-left:40px;
-    }
+  }
 }
 
 
+/* Sets the media query where the screen width is below 768px */
 @media screen and (max-width: 768px) {
   
   main,section {
@@ -285,6 +330,7 @@ footer {
     height:40px;
     padding-left:40px;
   }
+
   .sectionHeader{
     margin-top: 10px;
     border-right: none;

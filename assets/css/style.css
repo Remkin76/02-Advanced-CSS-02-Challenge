@@ -41,6 +41,7 @@ h1 {
 /* Sets the background of the main header  */
 h1{
   background-color: var(--sand);
+  border-radius: 0 20px 0 0;
 }
 
 
@@ -111,8 +112,11 @@ header {
   justify-content: space-between;
   z-index: 999;
   transition: padding 1s ease-in-out;
+  transition: background-color 0.3s ease;
 }
-
+header.scrolled, nav.scrolled{
+  background-color: var(--sand);
+}
 
 /* Sets the styling of the avatar image so that it sits inside the header */
 .avatar{
@@ -128,6 +132,7 @@ nav {
   background-color: var(--slateGrey);
   margin-left: auto;
   transition: font-size 1s ease-in-out;
+  transition: background-color 0.3s ease;
 }
 
 
@@ -139,6 +144,7 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  box-shadow: 0 0 20px var(--darkGrey); /* Adjust the values as needed */
 }
 
 
@@ -280,16 +286,21 @@ nav a:hover::before, .sectionParagraph a:hover::before {
 }
 
 
-/* Sets the basic styling of the footer */
+/* Sets the basic styling of the footer, and transition for effects */
 footer {
   width: 100%;
   bottom: 0;
-  padding: 20px;
+  padding: 50px;
   text-align: center;
   margin-top: auto;
-  background-color: #8db1ab;
+  background-color: var(--sand); /* Set the initial background color */
+  transition: background-color 3s ease-in-out; 
 }
 
+/*links from the java if footer is in viewport then change background colour*/
+footer.show-background {
+  background-color: var(--slateGrey); 
+}
 
 /* Sets the media query where the screen width is below 992px */
 @media screen and (max-width: 992px) {

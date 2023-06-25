@@ -38,9 +38,9 @@ The header was not able to be fixed due to issues with the anchor position not b
 Future developments include, but are not limited to:
     • Fixing the header
     • Referencing the subHeading image so it sits under the header which will alow diffferent flex displays of the header
-    • Fixing anchor points so that they are alos referenced to a 'non pixe' reference to the fixed header. Current any anchor points will be displayed under the fixed header.
-    • Setting % values for unique positioning of header over images.
-    • Working our why the % position for the existing headers sitting over images is not working as it should. i.e. 50% should sit in the middle of the container, but only trial and error of the % works. This also means that the header for the main and other images must be seperated, but shouldnt have to be.
+    • Fixing anchor points so that they are also referenced to a 'non pixe' reference to the fixed header. Current any anchor points will be displayed under the fixed header.
+    • Setting % values for unique positioning of header over images. -FIXED
+    • Working our why the % position for the existing headers sitting over images is not working as it should. i.e. 50% should sit in the middle of the container, but only trial and error of the % works. This also means that the header for the main and other images must be seperated, but shouldnt have to be. -FIXED use 'top' instead of 'margin-top' which actually reflects the horizontal width, not the height.
 
 ## Link to the application
 
@@ -52,4 +52,4 @@ https://remkin76.github.io/02-Advanced-CSS-02-Challenge/
 
 ## Version Control
 Cameron Swift   25/06/2023 Intial Release
-Cameron Swift   26/06/2023 Changed 'margin-top:45%' which actually reflects the horizontal width, not the height to 'top:50%' which does actually reflect the height.Have moved the header to the middle of the image instead of closer to thebottom.
+Cameron Swift   26/06/2023 Changed 'margin-top:45%'  to 'top:50%'.

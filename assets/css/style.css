@@ -64,7 +64,7 @@ p, h3 {
 /* Sets the unique styling of the main webiste in the my work section, so that it is twice the width of the website images below */
 .myWorkMainImage h3 {
   position: absolute;
-  margin-top:45%;
+  top:45%;
   margin-left:0;
   padding:10px;
   z-index:999;
@@ -78,7 +78,7 @@ p, h3 {
 .myWorkCardImage h3 {
   font-size: 1rem;
   position: absolute;
-  margin-top:40%;
+  top:50%;
   margin-left:0;
   padding:5px;
   z-index:999;

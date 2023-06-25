@@ -52,3 +52,4 @@ https://remkin76.github.io/02-Advanced-CSS-02-Challenge/
 
 ## Version Control
 Cameron Swift   25/06/2023 Intial Release
+Cameron Swift   26/06/2023 Changed 'margin-top:45%' which actually reflects the horizontal width, not the height to 'top:50%' which does actually reflect the height.Have moved the header to the middle of the image instead of closer to thebottom.
